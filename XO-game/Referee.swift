@@ -32,6 +32,7 @@ public final class Referee {
     // MARK: - Public
     
     public func determineWinner() -> Player? {
+      debugPrint(gameboard.description)
         for player in Player.allCases {
             if doesPlayerHaveWinningCombination(player) {
                 return player
